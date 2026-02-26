@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pushino-react/static/css/main.f855e6bc.css",
+    "main.js": "/pushino-react/static/js/main.a35ef660.js",
+    "static/js/453.a0785ad1.chunk.js": "/pushino-react/static/js/453.a0785ad1.chunk.js",
+    "static/media/logo.svg": "/pushino-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/pushino-react/index.html",
+    "main.f855e6bc.css.map": "/pushino-react/static/css/main.f855e6bc.css.map",
+    "main.a35ef660.js.map": "/pushino-react/static/js/main.a35ef660.js.map",
+    "453.a0785ad1.chunk.js.map": "/pushino-react/static/js/453.a0785ad1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.a35ef660.js"
+  ]
+}
