@@ -1,16 +1,18 @@
-import Header from './components/header.jsx'
-import Hero from './components/hero.jsx'
-import CTA from './components/cta.jsx'
-import Footer from './components/footer.jsx'
+import Header from './components/header.jsx';
+import Hero from './components/hero.jsx';
+import CTA from './components/CTA.jsx';
+import Footer from './components/footer.jsx';
+
+import './fonts/fonts.css';
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <container>
+      <div className="Container">
         <Hero/>
         <CTA/>
-      </container>
+      </div>
       <Footer/>
     </div>
   );

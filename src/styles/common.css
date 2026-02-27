@@ -7,11 +7,6 @@
   --page_margins: 12.5vw;
 }
 
-@font-face {
-  font-family: 'SovMod';
-  src: local('SovMod'), url(../fonts/SovMod.ttf) format('ttf');
-}
-
 * {
     font-family: "Open Sans";
 }
@@ -26,7 +21,7 @@ body {
     flex-direction: column;
 }
 
-container {
+.Container {
     row-gap: 180px;
 }
 
@@ -61,7 +56,7 @@ container {
         --page_margins: 40px;
     }
 
-    container {
+    .Container {
         row-gap: 90px;
     }
 
