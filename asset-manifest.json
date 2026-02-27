@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/pushino-react/static/css/main.9c1e1530.css",
+    "main.css": "/pushino-react/static/css/main.61b993d3.css",
     "main.js": "/pushino-react/static/js/main.263e051d.js",
     "static/js/453.a0785ad1.chunk.js": "/pushino-react/static/js/453.a0785ad1.chunk.js",
     "static/media/hero.webp": "/pushino-react/static/media/hero.f42fe3d8c7d4eb3470e6.webp",
-    "static/media/SovMod.ttf": "/pushino-react/static/media/SovMod.b55a0e5efd25f351be3b.ttf",
+    "static/media/SovMod.woff": "/pushino-react/static/media/SovMod.aad138b050a16fafd896.woff",
     "static/media/telegram.svg": "/pushino-react/static/media/telegram.c919dc4049a6438ed2c662183a4beb3b.svg",
     "static/media/vk.svg": "/pushino-react/static/media/vk.25c299a1f9adb91c49c3656473cc228e.svg",
     "index.html": "/pushino-react/index.html",
     "static/media/phone.svg": "/pushino-react/static/media/phone.2346b91329e7dbf5368cb7c37662fae6.svg",
     "static/media/logo100.svg": "/pushino-react/static/media/logo100.e7458c689e1c8c8d105585173d7dd769.svg",
-    "main.9c1e1530.css.map": "/pushino-react/static/css/main.9c1e1530.css.map",
+    "main.61b993d3.css.map": "/pushino-react/static/css/main.61b993d3.css.map",
     "main.263e051d.js.map": "/pushino-react/static/js/main.263e051d.js.map",
     "453.a0785ad1.chunk.js.map": "/pushino-react/static/js/453.a0785ad1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c1e1530.css",
+    "static/css/main.61b993d3.css",
     "static/js/main.263e051d.js"
   ]
 }
