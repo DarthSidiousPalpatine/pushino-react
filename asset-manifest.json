@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pushino-react/static/css/main.fb43f6b2.css",
-    "main.js": "/pushino-react/static/js/main.c0f3fbe8.js",
+    "main.css": "/pushino-react/static/css/main.054e45a5.css",
+    "main.js": "/pushino-react/static/js/main.263e051d.js",
     "static/js/453.a0785ad1.chunk.js": "/pushino-react/static/js/453.a0785ad1.chunk.js",
     "static/media/hero.webp": "/pushino-react/static/media/hero.f42fe3d8c7d4eb3470e6.webp",
     "static/media/SovMod.ttf": "/pushino-react/static/media/SovMod.b55a0e5efd25f351be3b.ttf",
@@ -10,12 +10,12 @@
     "index.html": "/pushino-react/index.html",
     "static/media/phone.svg": "/pushino-react/static/media/phone.2346b91329e7dbf5368cb7c37662fae6.svg",
     "static/media/logo100.svg": "/pushino-react/static/media/logo100.e7458c689e1c8c8d105585173d7dd769.svg",
-    "main.fb43f6b2.css.map": "/pushino-react/static/css/main.fb43f6b2.css.map",
-    "main.c0f3fbe8.js.map": "/pushino-react/static/js/main.c0f3fbe8.js.map",
+    "main.054e45a5.css.map": "/pushino-react/static/css/main.054e45a5.css.map",
+    "main.263e051d.js.map": "/pushino-react/static/js/main.263e051d.js.map",
     "453.a0785ad1.chunk.js.map": "/pushino-react/static/js/453.a0785ad1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb43f6b2.css",
-    "static/js/main.c0f3fbe8.js"
+    "static/css/main.054e45a5.css",
+    "static/js/main.263e051d.js"
   ]
 }
