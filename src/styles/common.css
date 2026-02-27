@@ -22,20 +22,37 @@ body {
 
 .App {
     display: flex;
-    row-gap: 180px;
     align-items: center;
     flex-direction: column;
 }
 
+container {
+    row-gap: 180px;
+}
 
 .accentText {
     color: var(--color_accent);
     font-weight: bolder;
 }
 
+.banner__Btn {
+    width: 345px;
+    height: 75px;
+
+    background-color: var(--color_accent);
+    color: var(--color_main);
+    font-size: 18pt;
+    font-weight: 600;
+    font-stretch: condensed;
+}
+
 @media screen and (max-width: 1440px) {
     :root {
         --page_margins: 40px;
+    }
+
+    .banner__Btn {
+        width: 325px;
     }
 }
 
@@ -44,13 +61,23 @@ body {
         --page_margins: 40px;
     }
 
-    .App {
+    container {
         row-gap: 90px;
+    }
+
+    .banner__Btn {
+        width: 295px;
+        font-size: 15pt;
     }
 }
 
 @media screen and (max-width: 768px) {
     :root {
         --page_margins: 20px;
+    }
+
+    .banner__Btn {
+        width: calc(100vw - 2 * var(--page_margins));
+        font-size: 15pt;
     }
 }
