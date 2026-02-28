@@ -1,0 +1,98 @@
+.RTU__body {
+    height: 435px;
+    width: 100%;
+    padding-right: var(--page_margins);
+    padding-left: var(--page_margins);
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+
+    align-items: start;
+}
+
+.RTU__table {
+    flex: 1 1 auto;
+    max-width: 953px;
+    width: 100vw;
+
+    text-align: center;
+}
+
+.RTU__table th {
+    height: 60px;
+    background-color: #f2f2f2;
+
+    font-weight: 600;
+    font-size: 18pt;
+    font-stretch: condensed;
+}
+
+.RTU__table td {
+    height: 75px;
+    background-color: #ffffff;
+
+    font-weight: 400;
+    font-size: 12pt;
+    font-stretch: normal;
+}
+
+.RTU__map {
+    flex: 0 0 auto;
+    width: 467px;
+    height: 435px;
+}
+
+.RTU__map .icon__block .icon__icon{
+    width: 20px;
+    height: 20px;
+}
+
+.RTU__map .icon__block .icon__text{
+    display: none;
+}
+
+.RTU__map .icon__block {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: -10px;
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1024px) {
+    .RTU__table th {
+        font-size: 12pt;
+    }
+
+    .RTU__table td {
+        font-size: 9pt;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .RTU__body {
+        flex-direction: column-reverse;
+        height: auto;
+        row-gap: 20px;
+    }
+
+    .RTU__map {
+        height: 420px;
+        width: 100%;
+    }
+
+    .RTU__table {
+        width: 100%;
+    }
+
+    .RTU__table th {
+        font-size: 12pt;
+    }
+
+    .RTU__table td {
+        font-size: 9pt;
+    }
+}

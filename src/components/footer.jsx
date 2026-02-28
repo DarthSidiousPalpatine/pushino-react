@@ -36,13 +36,13 @@ function Footer() {
                             <a href="#!">интересные места</a>
                         </li>
                         <li>
-                            <a href="#!">как доехать</a>
+                            <a href="#RoadToUs">как доехать</a>
                         </li>
                         <li>
                             <a href="#!">записаться</a>
                         </li>
                         <li>
-                            <a href="#!">о нас</a>
+                            <a href="#AboutUs">о нас</a>
                         </li>
                     </ul>
                 </div>

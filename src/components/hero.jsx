@@ -10,7 +10,7 @@ function Hero() {
                     <span className="hero__header">ЭКСКУРСИИ И ТУРЫ <br/> В ПУЩИНО</span>
                     <span className="hero__text">- наукоград, опередивший время</span>
                 </div>
-                <button className="banner__Btn">Оставить заявку</button>
+                <a href="#!" className="banner__Btn">Оставить заявку</a>
             </div>
         </div>
     );

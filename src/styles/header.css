@@ -35,8 +35,12 @@
 }
 
 .header__menu a {
-    margin: 3px 0.75vw 3px 0.75vw;
+    padding: 3px 0.75vw 3px 0.75vw;
     color: var(--color_main);
+}
+
+.header__menu a:hover {
+    background-color: #ffffff0d;
 }
 
 @media screen and (max-width: 1440px) {

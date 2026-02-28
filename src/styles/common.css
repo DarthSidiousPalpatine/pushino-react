@@ -23,7 +23,10 @@ body {
 }
 
 .Container {
+    display: flex;
+    flex-direction: column;
     row-gap: 180px;
+    align-items:center;
 }
 
 .accentText {
@@ -40,7 +43,55 @@ body {
     font-size: 18pt;
     font-weight: 600;
     font-stretch: condensed;
+
+    text-align: center;
+    display: flex;
+    justify-content: center; /* по горизонтали */
+    align-items: center;
 }
+
+.banner__Btn:hover {
+    filter: brightness(1.1);
+    font-size: 19pt;
+    transition: font-size 0.1s ease-in;
+}
+
+
+.block__WithHeader {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    row-gap: 30px;
+
+    align-items: center;
+}
+
+.block__WidthHeader__Header {
+    font-family: "SovMod";
+    font-size: 36pt;
+}
+
+
+.icon__block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    align-items: center;
+}
+
+.icon__icon {
+    width: 100px;
+    height: 100px;
+    color: var(--color_black);
+}
+
+.icon__text {
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
 
 @media screen and (max-width: 1440px) {
     :root {
@@ -65,6 +116,23 @@ body {
         width: 295px;
         font-size: 15pt;
     }
+
+    .block__WithHeader {
+        row-gap: 20px;
+    }
+
+    .block__WidthHeader__Header {
+        font-size: 30pt;
+    }
+
+    .icon__icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icon__text {
+        font-size: 14pt;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -75,5 +143,22 @@ body {
     .banner__Btn {
         width: calc(100vw - 2 * var(--page_margins));
         font-size: 15pt;
+    }
+
+    .block__WithHeader {
+        row-gap: 15px;
+    }
+
+    .block__WidthHeader__Header {
+        font-size: 24pt;
+    }
+
+    .icon__icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon__text {
+        font-size: 14pt;
     }
 }
