@@ -33,7 +33,7 @@ function Footer() {
                             <a href="#!">наши туры</a>
                         </li>
                         <li>
-                            <a href="#!">интересные места</a>
+                            <a href="#POI">интересные места</a>
                         </li>
                         <li>
                             <a href="#RoadToUs">как доехать</a>

@@ -1,0 +1,97 @@
+.Registration__body {
+    width: 100vw;
+    height: 660px;
+    background-color: var(--color_blue);
+
+    padding-left: var(--page_margins);
+    padding-right: var(--page_margins);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.Registration__body .banner__Btn {
+    background-color: var(--color_accent);
+    height: 60px;
+    width: 366px;
+
+    margin-bottom: 30px;
+}
+
+
+.Registration__fields {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+    max-width: 954px;
+    width: 100%;
+
+    margin: auto;
+    margin-top: 56px;
+}
+
+
+.Registration__inputField {
+    background-color: var(--color_main);
+    height: 60px;
+    width: 100%;
+
+    font-weight: 400;
+    font-stretch: condensed;
+    font-size: 13.5pt;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Registration__inputCheck {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.Registration__checkBox {
+    width: 25px;
+    height: 25px;
+    border: 0.5px solid var(--color_black);
+}
+
+.Registration__inputCheck span{
+    color: var(--color_main);
+    font-weight: 300;
+    font-stretch: expanded;
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1024px) {
+    .Registration__body {
+        height: 500px;
+    }
+
+    .Registration__body .banner__Btn {
+        height: 45px;
+
+        margin-bottom: 20px;
+    }
+
+    .Registration__fields {
+        row-gap: 40px;
+    }
+
+    .Registration__inputField {
+        height: 45px;
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Registration__body .banner__Btn {
+        height: 60px;
+        width: 100%;
+    }
+}

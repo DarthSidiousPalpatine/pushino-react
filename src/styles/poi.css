@@ -1,0 +1,100 @@
+.POI__body {
+    width: 100vw;
+    padding-left: var(--page_margins);
+    padding-right: var(--page_margins);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+
+
+
+.POI__card {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+
+    text-align: left;
+}
+
+.POI__card.inverted{
+    flex-direction: row-reverse;
+}
+
+.POI__card.inverted .POI__text {
+    text-align: right;
+}
+
+.POI__card img {
+    flex: 1 1 auto;
+    height: 100%;
+    max-width: 963px;
+    min-width: 0px;
+    width: auto;
+    object-fit: cover;
+}
+
+
+.POI__textHeader {
+    font-size: 24pt;
+
+    font-stretch: condensed;
+}
+
+.POI__text {
+    flex: 0 0 auto;
+    width: 467px;
+    height: 100%;
+
+    font-weight: 400;
+
+    font-size: 12pt;
+}
+
+.POI__button {
+    font-size: 13.5pt;
+    font-stretch: condensed;
+    font-weight: 600;
+
+    background-color: var(--color_black);
+    color: var(--color_main);
+
+    max-width: 466px;
+    width: 100%;
+    height: 45px;
+
+    line-height: 80%;
+}
+
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1024px) {
+    .POI__card {
+        height: 420px;
+    }
+
+    .POI__textHeader {
+        font-size: 18pt;
+    }
+
+    .POI__text {
+        font-size: 10.5pt;
+    }
+
+    .POI__button {
+        max-width: 220px;
+        height: 30px;
+        font-size: 12pt;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}

@@ -70,6 +70,14 @@ body {
 .block__WidthHeader__Header {
     font-family: "SovMod";
     font-size: 36pt;
+    text-align: center;
+}
+
+.block__WithHeader__SmallHeader {
+    font-family: "Open Sans";
+    font-size: 18pt;
+    font-stretch: condensed;
+    font-weight: 400;
 }
 
 
@@ -124,6 +132,9 @@ body {
     .block__WidthHeader__Header {
         font-size: 30pt;
     }
+    .block__WithHeader__SmallHeader {
+        font-size: 15pt;
+    }
 
     .icon__icon {
         width: 80px;
@@ -142,6 +153,11 @@ body {
 
     .banner__Btn {
         width: calc(100vw - 2 * var(--page_margins));
+        font-size: 15pt;
+    }
+
+    .banner__Btn:hover {
+        filter: none !important;
         font-size: 15pt;
     }
 
