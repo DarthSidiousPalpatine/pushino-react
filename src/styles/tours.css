@@ -56,7 +56,7 @@
     flex-direction: row;
     column-gap: 20px;
 
-     float: right;
+    float: right;
 }
 
 .Tours__Pictures img {
@@ -76,6 +76,8 @@
     display: flex;
     flex-direction: column;
     row-gap: 5px;
+
+    user-select: none;
 }
 
 .Tours__Feedback_article {

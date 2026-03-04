@@ -104,6 +104,29 @@ body {
     text-align: center;
 }
 
+.Stepper {
+    width: 100%;
+    background: none !important;
+    position: absolute;
+    bottom: 0px;
+}
+
+.MuiMobileStepper-dots {
+    margin: auto;
+}
+
+.MuiMobileStepper-dot {
+    background: var(--color_main) !important;
+}
+
+.MuiMobileStepper-dot.MuiMobileStepper-dotActive {
+    background: var(--color_accent) !important;
+}
+
+.Paper {
+    position: relative;
+}
+
 
 @media screen and (max-width: 1440px) {
     :root {

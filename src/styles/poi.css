@@ -78,6 +78,16 @@
     line-height: 80%;
 }
 
+.POI__body_mobile {
+    display: none;
+
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+
+@media screen and (max-width: 1920px) {
+}
 
 @media screen and (max-width: 1440px) {
 }
@@ -101,8 +111,35 @@
         font-size: 12pt;
         
     }
+
 }
 
 @media screen and (max-width: 768px) {
-    
+    .POI__body {
+        display: none;
+    }
+
+    .POI__body_mobile {
+        display: flex;
+
+        height: 600px;
+    }
+
+    .POI__body_mobile img {
+        min-width: 100vw;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .POI__text {
+        width: 100%;
+    }
+
+    .POI__textHeader {
+        text-align: center;
+    }
+
+    .POI__button {
+        display: none;
+    }
 }
