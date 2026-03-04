@@ -1,5 +1,6 @@
 :root {
   --color_main: #F5F7FA;
+  --color_main_rgb: 245, 247, 250;
   --color_blue: #2E3E4A;
   --color_black: #292321;
   --color_accent: #D46539;
@@ -65,6 +66,9 @@ body {
     row-gap: 30px;
 
     align-items: center;
+
+    padding-right: var(--page_margins);
+    padding-left: var(--page_margins);
 }
 
 .block__WidthHeader__Header {

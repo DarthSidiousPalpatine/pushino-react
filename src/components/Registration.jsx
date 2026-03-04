@@ -2,7 +2,7 @@ import '../styles/registration.css'
 
 function Registration() {
     return (
-        <div className="block__WithHeader" id="POI">
+        <div className="block__WithHeader" id="Registration">
             <span className="block__WidthHeader__Header">ЗАПИШИТЕСЬ НА ТУР В ПУЩИНО<br/><span className="block__WithHeader__SmallHeader">мы свяжемся с вами для уточнения деталей</span></span>
             <div className="Registration__body">
                 <div className="Registration__fields">

@@ -1,8 +1,6 @@
 .RTU__body {
     height: 435px;
     width: 100%;
-    padding-right: var(--page_margins);
-    padding-left: var(--page_margins);
 
     display: flex;
     flex-direction: row;

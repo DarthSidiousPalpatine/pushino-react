@@ -1,0 +1,346 @@
+.Tours__body {
+    width: 100%;
+    height: auto;
+
+    background-color: var(--color_blue);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+.Tours__SelectTour {
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-size: 24pt;
+    font-weight: 600;
+    color: #ffffff7f;
+}
+
+.Tours__SelectTour_Button {
+    width: 100%;
+    height: 100%;
+    background-color: #00000026;
+
+    border-style: solid;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: #ffffff00;
+}
+
+.--active {
+    background-color: #ffffff0c;
+    border-image: linear-gradient(to top, #ffffff00, #ffffff7f, #ffffff00) 1 100%;
+    border-width: 2px;
+    border-right-style: solid;
+    border-left-style: solid;
+
+    color: #ffffff;
+}
+
+
+.Tours__Map {
+    width: 100%;
+    height: 480px;
+}
+
+.Tours__Pictures {
+    height: 480px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+
+     float: right;
+}
+
+.Tours__Pictures img {
+    flex: 1 1 auto;
+    height: 100%;
+    max-width: 953px;
+    min-width: 0px;
+    width: auto;
+    object-fit: cover;
+}
+
+.Tours__Feedback {
+    flex: 0 0 auto;
+    width: 440px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.Tours__Feedback_article {
+    width: 100%;
+    height: 100%;
+}
+
+.Tours__Feedback_header {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Tours__Feedback_name {
+    color: var(--color_main);
+
+    font-size: 15pt;
+    font-weight: 600;
+    font-stretch: condensed;
+}
+
+.feedback_rating {
+    color: var(--color_main);
+
+    font-size: 13.5pt;
+    font-weight: 600;
+    font-stretch: condensed;
+}
+
+.feedback_accent {
+    color: var(--color_accent);
+}
+
+.Tours__Feedback_article p {
+    color: var(--color_main);
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    text-align:justify;
+
+    font-size: 12pt;
+    font-weight: 400;
+    font-stretch: normal;
+}
+
+.Tours__Feedback_block {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.Tours__Feedback_border {
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 50%;
+    height: calc((100% + 30px)/2);
+    
+
+    border-image: radial-gradient(farthest-corner at 0% 100%, #ffffff7f, #ffffff00) 1 1;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+
+
+.Tours__Information {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+
+.Tours__Information_Block {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+
+.Tours__Information_Text {
+    flex: 1 1 auto;
+    max-width: 900px;
+    width: 100%;
+
+    height: 460px;
+    overflow: hidden;
+
+    padding-left: 20px;
+
+    background-image: linear-gradient(to top, rgba(var(--color_main_rgb), 0), rgba(var(--color_main_rgb), 1) 15%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+
+    text-align: justify;
+
+    font-weight: 400;
+    font-size: 13.5pt;
+}
+
+.--fullText {
+    height: auto;
+
+    background-color: var(--color_main);
+}
+
+.Tours__Information_Icons {
+    flex: 0 0 auto;
+    width: 440px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+.Tours__Information_Icons .icon__text {
+    font-size: 13.5pt;
+    color: var(--color_main);
+}
+
+.Tours__Information_Icons .accentText {
+    font-size: 13.5pt;
+}
+
+
+.Tours__ShowMore_Button {
+    font-size: 13.5pt;
+    font-stretch: condensed;
+    font-weight: 600;
+
+    background-color: var(--color_main);
+    color: var(--color_black);
+
+    max-width: 224px;
+    width: 100%;
+    height: 40px;
+
+    line-height: 80%;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .Tours__Pictures img {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Tours__body {
+        width: 100vw;
+        row-gap: 30px;
+    }
+    
+    .Tours__SelectTour {
+        height: 60px;
+    }
+
+    .Tours__SelectTour_Button {
+        font-size: 18pt;
+    }
+
+    .Tours__Pictures {
+        height: 480px;
+
+        padding-left: var(--page_margins);
+        padding-right: var(--page_margins);
+    }
+
+    .Tours__Feedback {
+        width: 220px;
+    }
+
+    .Tours__Feedback_header {
+        padding-right: 0px;
+    }
+
+    .Tours__Feedback_name {
+        font-size: 12pt;
+    }
+    .feedback_rating {
+        font-size: 12pt;
+    }
+    .Tours__Feedback_article p {
+        font-size: 10.5pt;
+
+        padding-right: 0px;
+    }
+
+
+    .Tours__Map {
+        padding-left: var(--page_margins);
+        padding-right: var(--page_margins);
+    }
+
+    .Tours__Information_Block {
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+
+    .Tours__Information {
+        padding-left: var(--page_margins);
+        padding-right: var(--page_margins);
+    }
+
+    .Tours__Information_Icons {
+        width: 100%;
+        flex-direction: row;
+        column-gap: 140px;
+        justify-content: center;
+    }
+
+    .Tours__Information_Text {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .Tours__Information_Icons .icon__text {
+        font-size: 12pt;
+    }
+
+    .Tours__Information_Icons .accentText {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Tours__body {
+        row-gap: 40px;
+    }
+
+    .Tours__Information_Icons {
+        column-gap: 20px;
+    }
+
+    .Tours__Pictures {
+        position: relative;
+        top: -40px;
+        flex-direction: column;
+        row-gap: 15px;
+
+        padding: 0px;
+
+        height: auto;
+    }
+
+    .Tours__Pictures img {
+        width: 100vw;
+    }
+
+    .Tours__Map {
+        height: 720px;
+        padding: 0px;
+    }
+}

@@ -19,9 +19,9 @@ function POI() {
                     <div className={index%2 ? "POI__card inverted" : "POI__card"} key={index}>
                         <img src={require(`../images/${fileData.img}`)} alt={fileData.imgName}/>
                         <div className="POI__text">
-                            <span className="POI__textHeader">{fileData.imgName}</span><br/>
+                            <p className="POI__textHeader">{fileData.imgName}</p><br/>
                             {fileData.text && fileData.text.map((textData, index2) =>
-                            <span key={index2}>{textData}<br/><br/></span>)}
+                            <p key={index2}>{textData}<br/><br/></p>)}
                         </div>
                     </div>
                 )}

@@ -30,7 +30,7 @@ function Footer() {
                 <div className="footer__screensLinks">
                     <ul>
                         <li>
-                            <a href="#!">наши туры</a>
+                            <a href="#Tours">наши туры</a>
                         </li>
                         <li>
                             <a href="#POI">интересные места</a>
@@ -39,7 +39,7 @@ function Footer() {
                             <a href="#RoadToUs">как доехать</a>
                         </li>
                         <li>
-                            <a href="#!">записаться</a>
+                            <a href="#Registration">записаться</a>
                         </li>
                         <li>
                             <a href="#AboutUs">о нас</a>

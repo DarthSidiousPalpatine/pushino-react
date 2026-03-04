@@ -1,7 +1,11 @@
-.POI__body {
-    width: 100vw;
-    padding-left: var(--page_margins);
+.block__WithHeader {
     padding-right: var(--page_margins);
+    padding-left: var(--page_margins);
+}
+
+
+.POI__body {
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -25,7 +29,7 @@
     flex-direction: row-reverse;
 }
 
-.POI__card.inverted .POI__text {
+.POI__card.inverted .POI__text .POI__textHeader {
     text-align: right;
 }
 
@@ -53,6 +57,10 @@
     font-weight: 400;
 
     font-size: 12pt;
+
+    text-align: justify;
+
+    white-space: break-spaces;
 }
 
 .POI__button {

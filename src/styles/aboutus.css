@@ -2,9 +2,6 @@
     width: 100%;
     height: 240px;
 
-    padding-left: var(--page_margins);
-    padding-right: var(--page_margins);
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;

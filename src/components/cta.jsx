@@ -11,7 +11,7 @@ function CTA() {
                     <span className="CTA__header">Запланируйте отдых<br/>в Пущино <span className="accentText">через 9 дней</span></span>
                     <span className="CTA__text">выберите тур и получите <br/><span className="accentText">бесплатную</span> консультацию!</span>
                 </div>
-                <a href="#!" className="banner__Btn">Оставьте заявку прямо сейчас!</a>
+                <a href="#Registration" className="banner__Btn">Оставьте заявку прямо сейчас!</a>
                 </div>
             </div>
         </div>
