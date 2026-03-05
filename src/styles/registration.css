@@ -89,7 +89,7 @@
 
 @media screen and (max-width: 1024px) {
     .Registration__body {
-        height: 500px;
+        height: 550px;
     }
 
     .Registration__body .banner__Btn {
@@ -105,6 +105,14 @@
     .Registration__inputField {
         height: 45px;
         font-size: 12pt;
+    }
+
+    .Registration__modal {
+        font-size: 14pt;
+    }
+
+    .Registration__modal h1 {
+        font-size: 16pt;
     }
 }
 

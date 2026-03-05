@@ -98,6 +98,29 @@
     text-decoration: underline;
 }
 
+.Footer__modal {
+    background: var(--color_main);
+
+    width: 80vw;
+    height: auto;
+
+    margin: auto;
+
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+    font-weight: 600;
+    font-size: 20pt;
+}
+
+.Footer__modal h1 {
+    font-size: 30pt;
+}
+
 
 
 @media screen and (max-width: 1024px) {
@@ -134,6 +157,14 @@
     .logoImage {
         width: 80px;
         height: 80px;
+    }
+
+    .Footer__modal {
+        font-size: 14pt;
+    }
+
+    .Footer__modal h1 {
+        font-size: 16pt;
     }
 }
 

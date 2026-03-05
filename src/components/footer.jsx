@@ -3,8 +3,30 @@ import vkIcon from '../icons/vk.svg'
 import telegramIcon from '../icons/telegram.svg'
 import phoneIcon from '../icons/phone.svg'
 import '../styles/footer.css';
+import { useState } from 'react';
+import { Modal } from '@mui/material';
+
+import data from '../data/documents.json';
 
 function Footer() {
+    const [modalWindow, setModalWindow] = useState({
+    doc1: false,
+    doc2: false,
+    doc3: false,
+    doc4: false
+    });
+
+    const openModal = (e) => {
+        setModalWindow(prev => ({
+            ...prev,
+            [e.target.name]: true
+        }));
+    }
+
+    const handleCloseModal = (e) => {
+        setModalWindow({ doc1: false, doc2: false, doc3: false, doc4: false });
+    };
+
     return (
         <footer className="footer">
             <div className="footer__infoBlock">
@@ -49,21 +71,49 @@ function Footer() {
                 <div className="footer__docsLinks">
                     <ul>
                         <li>
-                            <a href="#!">согласие на обработку персональных данных</a>
+                            <a href="#!" name={"doc1"} onClick={openModal}>согласие на обработку персональных данных</a>
                         </li>
                         <li>
-                            <a href="#!">политика обработки персональных данных</a>
+                            <a href="#!" name={"doc2"} onClick={openModal}>политика обработки персональных данных</a>
                         </li>
                         <li>
-                            <a href="#!">политика конфиденциальности</a>
+                            <a href="#!" name={"doc3"} onClick={openModal}>политика конфиденциальности</a>
                         </li>
                         <li>
-                            <a href="#!">пользовательское соглашение</a>
+                            <a href="#!" name={"doc4"} onClick={openModal}>пользовательское соглашение</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <span className="footer__credits__mobile">© 2026 <span className="accentText">Пущино туры</span> все права защищены</span>
+            <Modal open={modalWindow["doc1"]} onClose={handleCloseModal}>
+                <div className="Footer__modal" onClick={handleCloseModal}>
+                    <h1>{data[0][0]}</h1><br/>{data[0].slice(1, data[0].length).map((line, index) =>
+                        <p key={index}>{line}</p>
+                    )}
+                </div>
+            </Modal>
+            <Modal open={modalWindow["doc2"]} onClose={handleCloseModal}>
+                <div className="Footer__modal" onClick={handleCloseModal}>
+                    <h1>{data[1][0]}</h1><br/>{data[1].slice(1, data[1].length).map((line, index) =>
+                        <p key={index}>{line}</p>
+                    )}
+                </div>
+            </Modal>
+            <Modal open={modalWindow["doc3"]} onClose={handleCloseModal}>
+                <div className="Footer__modal" onClick={handleCloseModal}>
+                    <h1>{data[2][0]}</h1><br/>{data[2].slice(1, data[2].length).map((line, index) =>
+                        <p key={index}>{line}</p>
+                    )}
+                </div>
+            </Modal>
+            <Modal open={modalWindow["doc4"]} onClose={handleCloseModal}>
+                <div className="Footer__modal" onClick={handleCloseModal}>
+                    <h1>{data[3][0]}</h1><br/>{data[3].slice(1, data[3].length).map((line, index) =>
+                        <p key={index}>{line}</p>
+                    )}
+                </div>
+            </Modal>
         </footer>
     );
 }

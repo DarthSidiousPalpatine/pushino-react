@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../styles/registration.css'
 import { Modal } from '@mui/material';
 
@@ -80,8 +80,8 @@ function Registration() {
                 </div>
                 <input name="Submit Button" className="banner__Btn" type="submit" value="Оставить заявку"/>
             </form>
-            <Modal open={isModalOpen} onClose={handleCloseModal} aria-labelledby="registration-success-modal" aria-describedby="modal-success-message">
-                <div className="Registration__modal">
+            <Modal open={isModalOpen} onClose={handleCloseModal}>
+                <div className="Registration__modal"  onClick={handleCloseModal}>
                     <p>Спасибо за вашу заявку, <span className="accentText">в скором времени мы свяжемся с вами</span> для уточнения деталей поездки.</p>
                 </div>
             </Modal>

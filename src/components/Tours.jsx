@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import '../styles/tours.css';
 import { Paper, MobileStepper } from '@mui/material';
 import { useSwipeable } from 'react-swipeable';
-import {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, /*YMapMarker,*/ reactify} from '../lib/ymaps';
+import {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker, reactify} from '../lib/ymaps';
 import data from '../data/tours.json';
 
 function Tours() {
@@ -21,11 +21,6 @@ function Tours() {
         if(showText) document.getElementById("Tours").scrollIntoView();
     }
 
-    const LOCATION = {
-        center: [37.620970, 54.832494],
-        zoom: 10
-    };
-
     const tourData = data.slice(chosenTour-1, chosenTour)[0];
     const picturesData = tourData["pictures"];
     const textData = tourData["text"];
@@ -36,7 +31,7 @@ function Tours() {
         <div className="block__WithHeader" id="Tours">
             <span className="block__WidthHeader__Header">НАШИ ТУРЫ</span>
             <div className="Tours__body">
-                <div className="Tours__SelectTour">
+                <div className="Tours__SelectTour" style={chosenTour==="3" ? {left:'-120%'} : chosenTour==="2" ? {left:'-60%'} : {left:'0%'}}>
                     <button style={{borderLeftStyle: "none"}} data-value={1} className={chosenTour==="1" ? "Tours__SelectTour_Button --active" : "Tours__SelectTour_Button"} onClick={chooseTour}>Экологический</button>
                     <button data-value={2} className={chosenTour==="2" ? "Tours__SelectTour_Button --active" : "Tours__SelectTour_Button"} onClick={chooseTour}>Архитектурный</button>
                     <button style={{borderRightStyle: "none"}} data-value={3} className={chosenTour==="3" ? "Tours__SelectTour_Button --active" : "Tours__SelectTour_Button"} onClick={chooseTour}>Астрономический</button>
@@ -68,9 +63,19 @@ function Tours() {
                     </div>
 
                     <div className="Tours__Map">
-                        <YMap location={reactify.useDefault(LOCATION)}>
+                        <YMap location={reactify.useDefault({center: [mapData["coordY"], mapData["coordX"]], zoom: mapData["zoom"]})} behaviors={[]}>
                             <YMapDefaultSchemeLayer />
                             <YMapDefaultFeaturesLayer />
+
+                            {mapData && mapData["points"].map((point, index) =>
+                                <YMapMarker key={index} coordinates={reactify.useDefault({center: [point["coordY"], point["coordX"]], zoom:5}.center)} draggable={false}>
+                                    <div className="icon__block">
+                                        <div className="icon__icon">
+                                            <img src={require(`../images/${point["img"]}`)} alt="иконка календаря"/>
+                                        </div>
+                                    </div>
+                                </YMapMarker>
+                            )}
                         </YMap>
                     </div>
                 </div>

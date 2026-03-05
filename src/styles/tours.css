@@ -51,6 +51,29 @@
     height: 480px;
 }
 
+.Tours__Map .icon__block .icon__icon{
+    width: 150px;
+    height: auto;
+
+    margin: auto;
+}
+
+.Tours__Map .icon__block .icon__text{
+    display: none;
+}
+
+.Tours__Map .icon__block {
+    background-color: var(--color_blue);
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border: 3px solid var(--color_blue);
+    position: relative;
+    left: -100px;
+    top: -50px;
+}
+
 .Tours__Pictures {
     height: 480px;
     width: 100%;
@@ -354,5 +377,12 @@
         width: 200vw;
         column-gap: 20px;
         height: 200px;
+    }
+
+    .Tours__SelectTour {
+        position: relative;
+        top: 0px;
+        width: 220%;
+        justify-content: center;
     }
 }

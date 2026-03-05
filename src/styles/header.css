@@ -43,6 +43,33 @@
     background-color: #ffffff0d;
 }
 
+
+.Header__modal {
+    position: relative;
+    top: 90px;
+    background: var(--color_main);
+    min-width: 30%;
+    width: auto;
+    height: auto;
+    float: right;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    padding: 30px;
+}
+
+.header__burger {
+    display: none;
+}
+
+.Header__modal a {
+    font-size: 24pt;
+    font-weight: 600;
+    color: var(--color_orange)
+}
+
 @media screen and (max-width: 1440px) {
     .header {
         font-size: 24pt;
@@ -72,6 +99,9 @@
 @media screen and (max-width: 768px) {
     .header {
         font-size: 15pt;
+
+        position: fixed;
+        z-index: 2;
     }
 
     .header__menu {
@@ -88,5 +118,14 @@
     .header__logo img {
         width: 60px;
         height: 60px;
+    }
+
+    .header__burger {
+        width: 50px;
+        display: block;
+    }
+
+    .Container {
+        margin-top: 90px;
     }
 }

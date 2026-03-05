@@ -121,13 +121,34 @@
                 ]
             }
         ],
-        "map": [
-            {
-                "img": "usadba.webp",
-                "coordX": "",
-                "coordY": ""
-            }
-        ]
+        "map":
+		{
+			"coordX": "54.839993",
+			"coordY": "37.606382",
+			"zoom": "16",
+			"points": [
+				{
+					"img": "waterfalls.webp",
+					"coordX": "54.839403693462565",
+					"coordY": "37.59693369041421"
+				},
+				{
+					"img": "usadba.webp",
+					"coordX": "54.83958017151048",
+					"coordY": "37.603574839935064"
+				},
+				{
+					"img": "buddist.webp",
+					"coordX": "54.84077834407556",
+					"coordY": "37.60712072025275"
+				},
+				{
+					"img": "lugovoy.webp",
+					"coordX": "54.84081859214607",
+					"coordY": "37.614939441190934"
+				}
+			]
+		}
     },
 	{
         "id":2,
@@ -271,13 +292,29 @@
                 ]
             }
         ],
-        "map": [
-            {
-                "img": "usadba.webp",
-                "coordX": "",
-                "coordY": ""
-            }
-        ]
+        "map":
+		{
+			"coordX": "54.8336490138442",
+			"coordY": "37.61170113018775",
+			"zoom": "16",
+			"points": [
+				{
+					"img": "mbou.webp",
+					"coordX": "54.836925369529055",
+					"coordY": "37.604948668424406"
+				},
+				{
+					"img": "arch.webp",
+					"coordX": "54.83250946496053",
+					"coordY": "37.62346376276849"
+				},
+				{
+					"img": "mosaic.webp",
+					"coordX": "54.8336490138442",
+					"coordY": "37.61170113018775"
+				}
+			]
+		}
     },
 	{
         "id":3,
@@ -412,12 +449,28 @@
                 ]
             }
         ],
-        "map": [
-            {
-                "img": "usadba.webp",
-                "coordX": "",
-                "coordY": ""
-            }
-        ]
+        "map":
+		{
+			"coordX": "54.82598695457299",
+			"coordY": "37.61993208137257",
+			"zoom": "16",
+			"points": [
+				{
+					"img": "observatory.webp",
+					"coordX": "54.825305576530376",
+					"coordY": "37.6195780297826"
+				},
+				{
+					"img": "telescope.webp",
+					"coordX": "54.825467235414095",
+					"coordY": "37.61436881040879"
+				},
+				{
+					"img": "telescope2.webp",
+					"coordX": "54.824934515769556",
+					"coordY": "37.630419149153894"
+				}
+			]
+		}
     }
 ]
