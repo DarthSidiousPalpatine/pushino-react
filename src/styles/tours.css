@@ -3,7 +3,9 @@
     height: auto;
 
     background-color: var(--color_blue);
+}
 
+.Tours__Main {
     display: flex;
     flex-direction: column;
     row-gap: 60px;
@@ -242,6 +244,9 @@
 @media screen and (max-width: 1024px) {
     .Tours__body {
         width: 100vw;
+    }
+
+    .Tours__Main {
         row-gap: 30px;
     }
     
@@ -318,7 +323,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .Tours__body {
+    .Tours__Main {
         row-gap: 40px;
     }
 
@@ -327,8 +332,6 @@
     }
 
     .Tours__Pictures {
-        position: relative;
-        top: -40px;
         flex-direction: column;
         row-gap: 15px;
 
@@ -344,5 +347,12 @@
     .Tours__Map {
         height: 720px;
         padding: 0px;
+    }
+
+    .Tours__Feedback {
+        flex-direction: row;
+        width: 200vw;
+        column-gap: 20px;
+        height: 200px;
     }
 }
