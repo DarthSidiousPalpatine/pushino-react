@@ -106,7 +106,7 @@ body {
 
 .Stepper {
     width: 100%;
-    background: none !important;
+    background: #2923217f !important;
     position: absolute;
     bottom: 0px;
 }
@@ -125,6 +125,13 @@ body {
 
 .Paper {
     position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Paper.MuiPaper-root{
+    background: #292321;
 }
 
 

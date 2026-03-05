@@ -11,10 +11,14 @@ function Tours() {
 
     const chooseTour = (event) => {
         setChosenTour(event.currentTarget.dataset.value);
+
+        if(showText) toggleText();
     }
 
     const toggleText = () => {
         toggleShowText(!showText);
+
+        if(showText) document.getElementById("Tours").scrollIntoView();
     }
 
     const LOCATION = {

@@ -17,7 +17,7 @@ function POI() {
         <div className="block__WithHeader" id="POI">
             <span className="block__WidthHeader__Header">ИНТЕРЕСНЫЕ МЕСТА</span>
             <div className="POI__body">
-                {data && data.slice(0, showMore ? data.length : 1).map((fileData, index) =>
+                {data && data.slice(0, showMore ? data.length : 3).map((fileData, index) =>
                     <div className={index%2 ? "POI__card inverted" : "POI__card"} key={index}>
                         <img src={require(`../images/${fileData.img}`)} alt={fileData.imgName}/>
                         <div className="POI__text">
